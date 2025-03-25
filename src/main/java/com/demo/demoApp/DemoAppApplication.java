@@ -13,8 +13,8 @@ public class DemoAppApplication {
 		System.out.println("Welcome to spring boot application project");
 
 		/// by using getBean method we can get the particular class object and can perform the task accordingly
-		FirstClass firstClass = context.getBean(FirstClass.class);
-		firstClass.doSomething();
+		Main main = context.getBean(Main.class);
+		main.build();
 	}
 
 }

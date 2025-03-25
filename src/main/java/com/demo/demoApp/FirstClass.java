@@ -2,6 +2,7 @@ package com.demo.demoApp;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -15,8 +16,8 @@ public class FirstClass implements ClassInterFace{
 //    }
 
     /// Field Injection
-    @Autowired
-    private  SecondClass secondClass;
+    //@Autowired
+   // private  SecondClass secondClass;
 
     /// setter Injection
     /// For Field Injection and setter Injection [@Autowired] annotation is mandatory
@@ -31,6 +32,8 @@ public class FirstClass implements ClassInterFace{
         //secondClass.constructorInjection();
         //secondClass.setterInjection();
         System.out.println("Tried using of dependency injection");
+
+
     }
 
     @Override
